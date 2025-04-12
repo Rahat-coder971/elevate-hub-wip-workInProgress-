@@ -35,7 +35,7 @@ const tp=null;
                   console.log('before executed');
                  const response= await auth.signup(formdata)
                  console.log(response.data);
-                 
+                 // is sucesss is true then only toast message will be shown
                   if(response.data.sucess==='true'){
                     toast.success(response.message)
                     navigate('/login')
